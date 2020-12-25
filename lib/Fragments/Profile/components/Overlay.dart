@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-
 import 'CutomImg.dart';
-class OverLayColor extends StatefulWidget {
-  double posLeft,posTop,opacity,height;
-  CustomClipper path;
 
+class OverLayColor extends StatefulWidget {
+  double posLeft, posTop, opacity, height;
+  CustomClipper path;
 
   OverLayColor(
       {this.posLeft, this.posTop, this.opacity, this.height, this.path});
@@ -16,7 +15,7 @@ class OverLayColor extends StatefulWidget {
 class _OverLayColorState extends State<OverLayColor> {
   @override
   Widget build(BuildContext context) {
-    return       new Positioned(
+    return new Positioned(
       left: widget.posLeft,
       top: widget.posTop,
       child: Opacity(
